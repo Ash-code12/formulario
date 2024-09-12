@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main>
+<h1>Formulario</h1>
+<br>
+
+<img src="images/kisspng-clip-art-vector-graphics-portable-network-graphics-clipboard-signup-transparent-amp-png-clipart-fre-1713899287522.webp" alt="" width="300" height="200">
+
+<br>
+<br>
+
+
+
+<form action="/submit-form" method="post" autocomplete="off">
+
+<h3>Ingresar datos en el siguiente formulario</h3>
+
+<h5> Todos los campos son obligatorios, el formulario solo se puede enviar cuado se cumplan todas las condiciones. </h5>
+<br>
+
+<label for="Nombre">Nombre:</label>
+<input type="text" name="Nombre" id="Nombre" pattern="[a-zA-Z]+" title="Solo se permiten letras (a-z) mayusculas y minusculas" required>
+<br>
+<br>
+<br>
+
+<label for="Apellido">Apellido:</label>
+<input type="text" name="Apellido" id="Apellido" pattern="[a-z]+" title="Solo se permiten letras (a-z) minusculas" required>
+<br>
+<br>
+<br>
+
+<label for="Color">Seleccionar color favorito:</label>
+<input type="color" name="Color" id="Seleccionar color favorito" required>
+<br>
+<br>
+<br>
+
+<label for="Edad">Edad:</label>
+<input type="number" name="Edad" id="Edad" required>
+<br>
+<br>
+<br>
+
+<label for="Números">Números:</label>
+<input type="text" name="Números" id="Números" pattern="\d+" title="Solo se permiten números">
+<br>
+<br>
+<br>
+
+<label for="Números">Positivos:</label>
+<input type="text" name="Positivos" id="Positivos" pattern="\d+" title="Solo se admiten números positivos" required>
+<br>
+<br>
+<br>
+
+<label for="Máximo-Mínimo">Máximo-Mínimo</label>
+<input type="number" name="Máximo-Mínimo" id="Máximo-Mínimo" min="10" max="20" step="0.5" value="15" required>
+<br>
+<br>
+<br>
+<label for="Fecha de nacimiento">Fecha de nacimiento</label>
+<input type="date" name="Fecha de nacimiento" id="Fecha de nacimiento" required>
+<br>
+<br>
+<br>
+
+<label for="Hora">Hora</label>
+<input type="time" name="Hora" id="Hora"required>
+<br>
+<br>
+<br>
+
+<label for="Ciudad">Ciudades</label>
+
+<select name="Ciudad" id="Ciudad" required>
+  <option value="Bucaramanga">Bucaramanga</option>
+  <option value="Bogotá">Bogotá</option>
+  <option value="Medellín">Medellín</option>
+  <option value="Cali">Cali</option>
+  <option value="Cartagena">Cartagena</option>
+  <option value="Santa Marta">Santa Marta</option>
+  <option value="Barranquilla">Barranquilla</option>
+  <option value="Ibagué">Ibagué</option>
+  <option value="Pereira">Pereira</option>
+  <option value="Cúcuta">Cúcuta</option>
+  <option value="Manizales">Manizales</option>
+  <option value="Villavicencio">Villavicencio</option>
+  <option value="Armenia">Armenia</option>
+</select>
+<br>
+<br>
+<br>
+<br>
+<label for="Selecciona tu género">Selecciona tu género</label>
+<br>
+ 
+ <ul>
+<li><label for="Masculino">Masculino</label>
+<input type="radio" name="genero" id="Masculino" value="Masculino" required></li>
+<br>
+
+
+<li><label for="Femenino">Femenino</label>
+<input type="radio" name="genero" id="Femenino" value="Femenino"required></li>
+<br>
+
+
+
+<li><label for="Otro">Otro</label>
+<input type="radio" name="genero" id="Otro" value="Otro" required></li>
+</ul>
+<br>
+<br>
+<br>
+
+<h4>Materias</h4>
+
+
+<input type="checkbox" name="Tipo[]" id="css"> 
+<label for="css">CSS</label>
+<br>
+
+<input type="checkbox" name="Tipo[]" id="js"> 
+<label for="js">JavaScript</label>
+<br>
+<input type="checkbox" name="tipo[]" id="html">
+<label for="html">HTML</label>
+<br>
+
+<input type="checkbox" name="tipo[]" id="Java">
+<label for="Java">Java</label>
+<br>
+
+<input type="checkbox" name="tipo[]" id="Python">
+<label for="Pyhton">Python</label>
+<br>
+
+<input type="checkbox" name="tipo[]" id="PHP">
+<label for="PHP">PHP</label>
+<br>
+<br>
+<br>
+
+<label for="file">Archivos</label>
+<input type="file" name="file" id="archivos"  accept=".jpg, .png" multiple required>
+<br>
+<br>
+<br>
+
+<label for="Contraseña">Contraseña</label>
+<input type="password" name="Contraseña" id="Contraseña" required>
+<br>
+<br>
+<br>
+
+<label for="Nombre Aprendiz">Nombre Aprendiz</label>
+<input type="text" name="Aprendiz" id="Nombre Aprendiz" value="Ashley Mora" readonly>
+<br>
+<br>
+
+
+
+<input type="submit" value="Enviar">
+
+
+</form>
+
+    </main>
+</body>
+</html>
